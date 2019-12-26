@@ -21,7 +21,7 @@ const App = () => {
 
 
   return (
-    <div style={{backgroundColor: '#333', width: '100vw', height: '100vh', border: '10px solid white'}}>
+    <div className='wrapper'>
       <Display/>
     </div>
   );

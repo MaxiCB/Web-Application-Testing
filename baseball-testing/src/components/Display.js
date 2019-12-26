@@ -2,34 +2,36 @@ import React from 'react';
 
 // Import needed components from reactstrap
 import { Container, Col, Row } from 'reactstrap';
+// Import Custom components
+import NumSquare from './NumSquare';
 
 const Display = (props) => {
     return (
-        <div style={{textAlign: 'center'}}>
+        <div className='large'>
             {/* / Top Section. Guest - Inning - Home \ */}
             <Container>
                 <Row>
-                    <Col xs='6' sm='4' style={{backgroundColor: 'red'}}>HOME</Col>
-                    <Col xs='6' sm='4' style={{backgroundColor: 'red'}}>INNING ELEMENT</Col>
-                    <Col xs='6' sm='4' style={{backgroundColor: 'red'}}>AWAY</Col>
+                    <Col sm='3'>HOME</Col>
+                    <Col sm='3'><NumSquare/></Col>
+                    <Col sm='3'>AWAY</Col>
                 </Row>
                 <Row>
-                    <Col xs='6' sm='4'>Home Score Element</Col>
-                    <Col xs='6' sm='4'>INNING</Col>
-                    <Col xs='6' sm='4'>Away Score Element</Col>
+                    <Col sm='3'><NumSquare/></Col>
+                    <Col sm='3'>INNING</Col>
+                    <Col sm='3'><NumSquare/></Col>
                 </Row>
             </Container>
             {/* / Bottom Section. Ball - Strike - Out \ */}
             <Container>
-                <Row>
-                    <Col xs='6' sm='4' style={{backgroundColor: 'red'}}>BALL</Col>
-                    <Col xs='6' sm='4' style={{backgroundColor: 'red'}}>STRIKE</Col>
-                    <Col xs='6' sm='4' style={{backgroundColor: 'red'}}>OUT</Col>
+                <Row style={{marginBottom: '10px'}}>
+                    <Col sm='3'>BALL</Col>
+                    <Col sm='3'>STRIKE</Col>
+                    <Col sm='3'>OUT</Col>
                 </Row>
                 <Row>
-                    <Col xs='6' sm='4' style={{backgroundColor: 'red'}}>[BAL]L</Col>
-                    <Col xs='6' sm='4' style={{backgroundColor: 'red'}}>[STRIKE]</Col>
-                    <Col xs='6' sm='4' style={{backgroundColor: 'red'}}>[OUT]</Col>
+                    <Col sm='3'><NumSquare/></Col>
+                    <Col sm='3'><NumSquare/></Col>
+                    <Col sm='3'><NumSquare/></Col>
                 </Row>
             </Container>
         </div>

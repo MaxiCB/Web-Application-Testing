@@ -1,0 +1,16 @@
+.wrapper {
+    background-color: black;
+    border: 10px solid white;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.large {
+    text-align: center;
+    font-size: x-large;
+}
+
+.noMargin {
+    margin: 0px;
+}
