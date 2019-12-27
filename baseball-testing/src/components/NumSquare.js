@@ -6,7 +6,7 @@ const NumSquare = (props) => {
     return (
         <Card body style={{backgroundColor: 'black', border: '5px solid #333'}}>
             <CardTitle>
-                0
+                {props.number}
             </CardTitle>
         </Card>
     )
