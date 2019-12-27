@@ -1,16 +1,13 @@
-import React, { useEffect, useState } from 'react';
-// Import custom hook to store information
-import { useSetScore } from './hooks/useSetScore';
+import React, { useState } from 'react';
 // Import UI components
 import Display from './components/Display'
 import Dashboard from './components/Dashboard';
 
 const App = () => {
 
-// Custom hook for setting inning and at bat team.
   const [inning, setInning] = useState(1);
   const [atBat, setAtBat] = useState('home');
-// Game information store with custom hook
+// Game information store 
   const [homeBall, setHomeBall] = useState(0);
   const [awayBall, setAwayBall] = useState(0);
   const [homeStrike, setHomeStrike] = useState(0);
